@@ -18,6 +18,6 @@ RUN /bin/bash -c "source $HOME/conda3/bin/activate"
 ENV PATH /root/conda3/bin:$PATH
 
 RUN conda create -n fenicsproject -c conda-forge fenics
-RUN conda install -c anaconda ipykernel \
-  && python -m ipykernel install --user --name=fenicsproject
+# RUN conda install -c anaconda ipykernel \
+#   && python -m ipykernel install --user --name=fenicsproject
 
