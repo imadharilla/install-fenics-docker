@@ -8,7 +8,7 @@ Please make sure that docker is up and running!
 
 ## type commands :
 ```
-$ docker-compose build .
+$ docker-compose build
 $ docker-compose run --service-ports --rm  app
 ```
 
