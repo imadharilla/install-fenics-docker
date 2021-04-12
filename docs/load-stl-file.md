@@ -16,7 +16,7 @@ meshio.write('./bottle.xdmf', msh)
 ## load xdmf converted file in Fenics 
 ```
 mesh = Mesh()
-XDMFFile(MPI.comm_world, "./foo.xdmf").read(mesh)
+XDMFFile(MPI.comm_world, "./bottle.xdmf").read(mesh)
 
 # define Function space over the mesh 
 V = VectorFunctionSpace(mesh, 'P', 1)
